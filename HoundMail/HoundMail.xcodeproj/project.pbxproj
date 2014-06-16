@@ -22,6 +22,9 @@
 		0F6DA76A194F7C7E00653634 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6DA749194F7C7E00653634 /* UIKit.framework */; };
 		0F6DA772194F7C7E00653634 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F6DA770194F7C7E00653634 /* InfoPlist.strings */; };
 		0F6DA774194F7C7E00653634 /* HoundMailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6DA773194F7C7E00653634 /* HoundMailTests.m */; };
+		0F6DA78F194F7E4C00653634 /* libMailCore-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6DA788194F7D7900653634 /* libMailCore-ios.a */; };
+		0F6DA791194F7E5500653634 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6DA790194F7E5500653634 /* CFNetwork.framework */; };
+		0F6DA793194F7E5A00653634 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6DA792194F7E5A00653634 /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +34,48 @@
 			proxyType = 1;
 			remoteGlobalIDString = 0F6DA741194F7C7E00653634;
 			remoteInfo = HoundMail;
+		};
+		0F6DA785194F7D7900653634 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F6DA77D194F7D7800653634 /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C64EA537169E772200778456;
+			remoteInfo = "static mailcore2 osx";
+		};
+		0F6DA787194F7D7900653634 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F6DA77D194F7D7800653634 /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C6BA2C191705F4E6003F0E9E;
+			remoteInfo = "static mailcore2 ios";
+		};
+		0F6DA789194F7D7900653634 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F6DA77D194F7D7800653634 /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C64EA78C169F259200778456;
+			remoteInfo = tests;
+		};
+		0F6DA78B194F7D7900653634 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F6DA77D194F7D7800653634 /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C6A81B911706840C00882C15;
+			remoteInfo = "test-ios";
+		};
+		0F6DA78D194F7D7900653634 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F6DA77D194F7D7800653634 /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C6BD288D170BD71100A91AC1;
+			remoteInfo = "mailcore osx";
+		};
+		0F6DA794194F7EDB00653634 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F6DA77D194F7D7800653634 /* mailcore2.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C6BA2B091705F4E6003F0E9E;
+			remoteInfo = "static mailcore2 ios";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -56,6 +101,9 @@
 		0F6DA76F194F7C7E00653634 /* HoundMailTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HoundMailTests-Info.plist"; sourceTree = "<group>"; };
 		0F6DA771194F7C7E00653634 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0F6DA773194F7C7E00653634 /* HoundMailTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HoundMailTests.m; sourceTree = "<group>"; };
+		0F6DA77D194F7D7800653634 /* mailcore2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mailcore2.xcodeproj; path = "../../../MailCore2/build-mac/mailcore2.xcodeproj"; sourceTree = "<group>"; };
+		0F6DA790194F7E5500653634 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		0F6DA792194F7E5A00653634 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +111,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F6DA793194F7E5A00653634 /* Security.framework in Frameworks */,
+				0F6DA791194F7E5500653634 /* CFNetwork.framework in Frameworks */,
+				0F6DA78F194F7E4C00653634 /* libMailCore-ios.a in Frameworks */,
 				0F6DA748194F7C7E00653634 /* CoreGraphics.framework in Frameworks */,
 				0F6DA74A194F7C7E00653634 /* UIKit.framework in Frameworks */,
 				0F6DA746194F7C7E00653634 /* Foundation.framework in Frameworks */,
@@ -104,6 +155,8 @@
 		0F6DA744194F7C7E00653634 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0F6DA792194F7E5A00653634 /* Security.framework */,
+				0F6DA790194F7E5500653634 /* CFNetwork.framework */,
 				0F6DA745194F7C7E00653634 /* Foundation.framework */,
 				0F6DA747194F7C7E00653634 /* CoreGraphics.framework */,
 				0F6DA749194F7C7E00653634 /* UIKit.framework */,
@@ -115,6 +168,7 @@
 		0F6DA74B194F7C7E00653634 /* HoundMail */ = {
 			isa = PBXGroup;
 			children = (
+				0F6DA77D194F7D7800653634 /* mailcore2.xcodeproj */,
 				0F6DA754194F7C7E00653634 /* XYZAppDelegate.h */,
 				0F6DA755194F7C7E00653634 /* XYZAppDelegate.m */,
 				0F6DA757194F7C7E00653634 /* Main.storyboard */,
@@ -157,6 +211,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0F6DA77E194F7D7800653634 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F6DA786194F7D7900653634 /* libMailCore.a */,
+				0F6DA788194F7D7900653634 /* libMailCore-ios.a */,
+				0F6DA78A194F7D7900653634 /* tests */,
+				0F6DA78C194F7D7900653634 /* test-ios.app */,
+				0F6DA78E194F7D7900653634 /* MailCore.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -171,6 +237,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				0F6DA795194F7EDB00653634 /* PBXTargetDependency */,
 			);
 			name = HoundMail;
 			productName = HoundMail;
@@ -221,6 +288,12 @@
 			mainGroup = 0F6DA739194F7C7E00653634;
 			productRefGroup = 0F6DA743194F7C7E00653634 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0F6DA77E194F7D7800653634 /* Products */;
+					ProjectRef = 0F6DA77D194F7D7800653634 /* mailcore2.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0F6DA741194F7C7E00653634 /* HoundMail */,
@@ -228,6 +301,44 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0F6DA786194F7D7900653634 /* libMailCore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMailCore.a;
+			remoteRef = 0F6DA785194F7D7900653634 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F6DA788194F7D7900653634 /* libMailCore-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libMailCore-ios.a";
+			remoteRef = 0F6DA787194F7D7900653634 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F6DA78A194F7D7900653634 /* tests */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = tests;
+			remoteRef = 0F6DA789194F7D7900653634 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F6DA78C194F7D7900653634 /* test-ios.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "test-ios.app";
+			remoteRef = 0F6DA78B194F7D7900653634 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F6DA78E194F7D7900653634 /* MailCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MailCore.framework;
+			remoteRef = 0F6DA78D194F7D7900653634 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0F6DA740194F7C7E00653634 /* Resources */ = {
@@ -277,6 +388,11 @@
 			isa = PBXTargetDependency;
 			target = 0F6DA741194F7C7E00653634 /* HoundMail */;
 			targetProxy = 0F6DA76B194F7C7E00653634 /* PBXContainerItemProxy */;
+		};
+		0F6DA795194F7EDB00653634 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "static mailcore2 ios";
+			targetProxy = 0F6DA794194F7EDB00653634 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -386,6 +502,22 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HoundMail/HoundMail-Prefix.pch";
 				INFOPLIST_FILE = "HoundMail/HoundMail-Info.plist";
+				OTHER_LDFLAGS = (
+					"-lctemplate-ios",
+					"-letpan-ios",
+					"-licudata",
+					"-licui18n",
+					"-licuuc",
+					"-lxml2",
+					"-lsasl2",
+					"-liconv",
+					"-ltidy",
+					"-lz",
+					"-licucore",
+					"-lstdc++",
+					"-stdlib=libstdc++",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -399,6 +531,22 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HoundMail/HoundMail-Prefix.pch";
 				INFOPLIST_FILE = "HoundMail/HoundMail-Info.plist";
+				OTHER_LDFLAGS = (
+					"-lctemplate-ios",
+					"-letpan-ios",
+					"-licudata",
+					"-licui18n",
+					"-licuuc",
+					"-lxml2",
+					"-lsasl2",
+					"-liconv",
+					"-ltidy",
+					"-lz",
+					"-licucore",
+					"-lstdc++",
+					"-stdlib=libstdc++",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
